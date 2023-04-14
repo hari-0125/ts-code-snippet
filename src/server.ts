@@ -72,7 +72,7 @@ console.log(personName);
 app.get('/', async (req: Request, res: Response) => {
   const data = await getUserService();
   updateUserService(data);
-  test(data);
+  returnValue(data);
   res.send('Hello World');
 });
 
