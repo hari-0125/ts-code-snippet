@@ -35,12 +35,12 @@ const returnValue = async (op: string): Promise<string> => {
   return val;
 };
 
-// function calculateArea(width: number, height: number): number {
-//     return width * height;
-// };
+function calculateArea(width: number, height: number) {
+  return width * height;
+};
 
-// const area: string = calculateArea(5, 10);
-// console.log(area);
+const area: string = calculateArea(5, 10);
+console.log(area);
 
 interface Person {
   name: string;
