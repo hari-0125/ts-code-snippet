@@ -42,17 +42,7 @@ function calculateArea(width: number, height: number) {
 const area: string = calculateArea(5, 10);
 console.log(area);
 
-interface Person {
-  name: string;
-  age: number;
-  address: {
-    street: string;
-    city: string;
-    country: string;
-  };
-}
-
-function getPersonName(person: Person): string {
+function getPersonName(person): string {
   return person.name;
 }
 
@@ -66,7 +56,7 @@ const person = {
   },
 };
 
-const personName: string = getPersonName(person);
+const personName = getPersonName(person);
 console.log(personName);
 
 app.get('/', async (req: Request, res: Response) => {
